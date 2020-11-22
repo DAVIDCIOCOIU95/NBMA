@@ -319,6 +319,9 @@ namespace NapierBankingApp.ViewModels
             // Clear Error Messages
             LoadedMessagesErrors.Clear();
 
+            //set up a flag for a later message
+            var unsaved = 0;
+            var saved = 0;
             // Save the message
             // Throw error if there is no error to be saved
             if (LoadedMessages.Count == 0)
@@ -332,12 +335,16 @@ namespace NapierBankingApp.ViewModels
                 try
                 {
                     database.serializeToJSON(message);
+                    saved = saved + 1;
                 }
                 catch (Exception ex)
                 {
                     LoadedMessagesErrors.Add(ex.Message.ToString());
+                    unsaved = unsaved + 1;
                 }
             }
+            
+               MessageBox.Show("Saving concluded.\nSaved messages: " + saved + "\nUnsaved messages: "+unsaved);
         }
 
         /// <summary>
