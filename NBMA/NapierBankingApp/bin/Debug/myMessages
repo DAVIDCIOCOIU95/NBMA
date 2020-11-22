@@ -1,0 +1,43 @@
+{
+  "SMSList": {},
+  "TweetList": {
+    "T123456789": {
+      "MessageType": "T",
+      "Header": "T123456789",
+      "Sender": "@david",
+      "Text": "hello world @david #sunny"
+    }
+  },
+  "SIRList": {
+    "E123456789": {
+      "MessageType": "E",
+      "Header": "E123456789",
+      "Sender": "david@gmail.com",
+      "Text": "<URL quarantined> <URL quarantined> <URL quarantined>",
+      "Subject": "SIR 9/2/2020",
+      "EmailType": "SIR",
+      "SortCode": "00-00-00",
+      "IncidentType": "Theft"
+    },
+    "E000000000": {
+      "MessageType": "E",
+      "Header": "E000000000",
+      "Sender": "david@gmail.com",
+      "Text": "",
+      "Subject": "SIR 02/03/2020",
+      "EmailType": "SIR",
+      "SortCode": "99-99-99",
+      "IncidentType": "Theft"
+    }
+  },
+  "SEMList": {
+    "E123456789": {
+      "MessageType": "E",
+      "Header": "E123456789",
+      "Sender": "david@gmail.com",
+      "Text": "<URL quarantined> <URL quarantined> <URL quarantined>  gfdsgsdfgfdsgdfgdfsgdsgfdsgsdfgdsfgfdsgfdsgdgsdgsdfgdsfgsfdgfdsgfdgdfsgsdfgfdsgsdffds",
+      "Subject": "SEM email",
+      "EmailType": "SEM"
+    }
+  }
+}
