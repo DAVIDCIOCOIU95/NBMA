@@ -1,5 +1,12 @@
 {
-  "SMSList": {},
+  "SMSList": {
+    "S000000000": {
+      "MessageType": "S",
+      "Header": "S000000000",
+      "Sender": "+44786786765",
+      "Text": "Hello World LOL <Laughing out loud>"
+    }
+  },
   "TweetList": {
     "T123456789": {
       "MessageType": "T",

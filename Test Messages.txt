@@ -1,0 +1,23 @@
+S000000000
++44786786765,
+Hello World LOL
+
+"hello, lol"
+-------
+T000000000
+@david,
+Hello World LOL @mouse #screen
+-------
+
+E000000000
+david@gmail.com,
+Info about NMBA,
+Hello World http:\\mywebsite.com
+
+-----
+E000000000
+david@gmail.com,
+SIR 02/02/2020,
+99-99-99,
+Theft,
+Hello World http:\\mywebsite.com
