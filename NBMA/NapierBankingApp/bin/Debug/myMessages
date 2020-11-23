@@ -4,46 +4,36 @@
       "MessageType": "S",
       "Header": "S000000000",
       "Sender": "+44786786765",
-      "Text": "Hello World LOL <Laughing out loud>"
+      "Text": "hello, lol"
     }
   },
   "TweetList": {
-    "T123456789": {
+    "T000000000": {
       "MessageType": "T",
-      "Header": "T123456789",
+      "Header": "T000000000",
       "Sender": "@david",
-      "Text": "hello world @david #sunny"
+      "Text": "Hello World LOL <Laughing out loud> @mouse #screen"
     }
   },
   "SIRList": {
-    "E123456789": {
+    "E000000001": {
       "MessageType": "E",
-      "Header": "E123456789",
+      "Header": "E000000001",
       "Sender": "david@gmail.com",
-      "Text": "<URL quarantined> <URL quarantined> <URL quarantined>",
-      "Subject": "SIR 9/2/2020",
-      "EmailType": "SIR",
-      "SortCode": "00-00-00",
-      "IncidentType": "Theft"
-    },
-    "E000000000": {
-      "MessageType": "E",
-      "Header": "E000000000",
-      "Sender": "david@gmail.com",
-      "Text": "",
-      "Subject": "SIR 02/03/2020",
+      "Text": "Hello World <URL quarantined>",
+      "Subject": "SIR 02/02/2020",
       "EmailType": "SIR",
       "SortCode": "99-99-99",
       "IncidentType": "Theft"
     }
   },
   "SEMList": {
-    "E123456789": {
+    "E000000000": {
       "MessageType": "E",
-      "Header": "E123456789",
+      "Header": "E000000000",
       "Sender": "david@gmail.com",
-      "Text": "<URL quarantined> <URL quarantined> <URL quarantined>  gfdsgsdfgfdsgdfgdfsgdsgfdsgsdfgdsfgfdsgfdsgdgsdgsdfgdsfgsfdgfdsgfdgdfsgsdfgfdsgsdffds",
-      "Subject": "SEM email",
+      "Text": "Hello World <URL quarantined>",
+      "Subject": "Info about NMBA",
       "EmailType": "SEM"
     }
   }

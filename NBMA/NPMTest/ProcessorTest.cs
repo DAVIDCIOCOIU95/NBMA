@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NapierBankingApp.Models;
 using NapierBankingApp.Services;
+using NapierBankingApp.Services.Validation;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -94,6 +95,15 @@ namespace NPMTest
             Tweet message = new Tweet("T000000000", "@david", "david");
             Message processedMessage = processor.ProcessMessage(message);
             Assert.AreEqual(0, processor.TrendingList.Count);
+        }
+
+        [TestMethod]
+        public void AddToSirList_AddingCorrectSir_ShouldAdd()
+        {
+            Processor processor = new Processor();
+            SIR message = new SIR("E000000000", "david@gmail.com", "SIR 02/07/1995","99-99-99", "Theft","http:\\\\mywebsite.com");
+            Message processedMessage = processor.ProcessMessage(message);
+            Assert.AreEqual(1, processor.SirList.Count);
         }
     }
 }

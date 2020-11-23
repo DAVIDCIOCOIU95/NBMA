@@ -385,8 +385,8 @@ namespace NapierBankingApp.ViewModels
                         // Loop through SIRList and Add new instances
                         foreach (var item in processor.SirList)
                         {
-                            SIRList.Add("Sort Code: " + item[0].ToString() + "\nIncident Type: " + item[1].ToString());
-                            
+                            SIRList.Add("Sort Code: " + item.Key.ToString() + "\nCount: " + item.Value.ToString());
+
                         }
                     }
                     break;

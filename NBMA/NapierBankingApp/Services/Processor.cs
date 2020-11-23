@@ -19,7 +19,7 @@ namespace NapierBankingApp.Services
     {
         public Dictionary<string, int> TrendingList { get; private set; }
         public Dictionary<string, int> MentionsList { get; private set; }
-        public List<string[]> SirList { get; private set; }
+        public Dictionary<string, int> SirList { get; private set; }
         public Dictionary<string, int> QuarantinedLinks { get; private set; }
 
         private Dictionary<string, string> abbreviations;
@@ -30,7 +30,7 @@ namespace NapierBankingApp.Services
         {
             TrendingList = new Dictionary<string, int>();
             MentionsList = new Dictionary<string, int>();
-            SirList = new List<string[]>();
+            SirList = new Dictionary<string, int>();
             QuarantinedLinks = new Dictionary<string, int>();
             abbreviations = new Dictionary<string, string>();
             LoadAbbreviations("textwords.csv");
@@ -59,8 +59,17 @@ namespace NapierBankingApp.Services
         {
             message.Text = SobstituteURL(message.Text);
             //Add To SIR
-            string[] sirObject = { message.SortCode, message.IncidentType };
-            SirList.Add(sirObject);
+            string sirObject = message.SortCode + " " + message.IncidentType;
+
+            if (SirList.ContainsKey(sirObject.ToString()))
+            {
+                SirList[sirObject.ToString()] += 1;
+            }
+            else
+            {
+                SirList.Add(sirObject.ToString(), 1);
+            }
+
             return message;
         }
         public Message ProcessMessage(Message message)
